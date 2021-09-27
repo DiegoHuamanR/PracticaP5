@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+function cambiarColor(){
+    $("#div21").fadeTo("slow", 0.8); 
+}
+    
+</script>
+</head>
+<body>
+    <div class="content">
+        <div class="col-1">
+        <label for="inputData">Elemento a insertar: </label>
+        <input type="text" name="inputData"/>
+        <input type="button" name="boton1" value="Agregar"/>
+        </div>
+        <div class="col-2">
+            
+        <div id="div21" style="width:250px;height:100px;background-color:blue;">
+	<h2>Ejercicio 2 - Practica Nº05</h2> </div><br>
+        
+        <ul id="list-element">
+        <!-- Elementos agregados --->
+        </ul>
+        </div>
+        </div>
+        <script type="text/javascript">
+        var inputData = document.querySelector('input[name=inputData]'),
+        buttonAdd = document.querySelector('input[name=boton1]');
+        buttonAdd.addEventListener('click', añadirElemento, false);
+        
+        function añadirElemento()   {   
+            var elementData = inputData.value,
+            ulElements = document.getElementById('list-element'),
+            
+            li = document.createElement('li');
+            li.innerHTML = elementData; 
+            ulElements.appendChild(li); 
+            inputData.value = ''; 
+        }
+        </script>
+   
+
+<button id="botonColor" onclick="cambiarColor()">
+Cambiar el color</button><br><br>
+
+</body> 
+</html>
