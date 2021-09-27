@@ -1,0 +1,18 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+  
+heigh:665px;
+  background-image: url("https://png.pngtree.com/png-vector/20190429/ourmid/pngtree-employee-icon-vector-illustration-in-glyph-style-for-any-purpose-png-image_998315.jpg");
+  background-size: 10rem;
+  
+}
+
+
+table { font-family: “Lucida Sans Unicode”, “Lucida Grande”, Sans-Serif;
+font-size: 14px; margin: 45px; width: 480px; text-align: left; border-collapse: collapse; }
+
+th { font-size: 13px; font-weight: normal; padding: 8px; background: #b9c9fe;
+border-top: 4px solid #aabcfe; border-bottom: 1px solid #fff; color: #039; }
+
+td { padding: 8px; background: #e8edff; border-bottom: 1px solid #fff;
+color: #669; border-top: 1px solid transparent; }
